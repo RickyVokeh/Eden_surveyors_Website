@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Contact Eden Surveys | Reach Our Licensed Land Surveyors in Kenya</title>
+    <meta name="description"
+        content="Get in touch with Eden Surveys - licensed land surveyors in Kenya. Visit our main office in Malili, Machakos, or call us for professional surveying services.">
+    <meta name="keywords"
+        content="contact land surveyor Kenya, Eden Surveys contact, land surveyor Nairobi, survey office Machakos, Malili surveyors">
+    <meta name="author" content="Eden Surveys">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://edensurvey.co.ke/contact">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact Eden Surveys | Kenya's Trusted Land Surveyors">
+    <meta property="og:description"
+        content="Reach out for professional land surveying services. Visit our office in Malili, Machakos or contact us via phone, email, or WhatsApp.">
+    <meta property="og:image" content="https://edensurvey.co.ke/assets/images/contact-og.jpg">
+    <meta property="og:url" content="https://edensurvey.co.ke/contact">
+    <meta property="og:type" content="website">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!--<base href="/site/"> -->
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://edensurvey.co.ke/assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://edensurvey.co.ke/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://edensurvey.co.ke/apple-touch-icon.png" />
+    <style>
+        /* ============================================
+   CONTACT PAGE SPECIFIC STYLES
+   ============================================ */
+
+        /* Contact Hero */
+        .contact-hero {
+            background: linear-gradient(135deg, var(--light-green-bg) 0%, var(--light-blue-bg) 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .contact-hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+        }
+
+        /* Contact Info Cards */
+        .contact-info-cards {
+            padding: 4rem 0;
+            background: var(--white);
+        }
+
+        .contact-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 2.5rem;
+            background: var(--white);
+            border: 1px solid var(--gray-200);
+            border-radius: 20px;
+            transition: var(--transition);
+        }
+
+        .contact-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+            border-color: var(--primary-green-light);
+        }
+
+        .card-icon {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-detail {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-hours {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin: 0.75rem 0;
+        }
+
+        .contact-action {
+            display: inline-block;
+            margin-top: 1rem;
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .contact-action:hover {
+            gap: 0.5rem;
+            transform: translateX(5px);
+        }
+
+        .whatsapp-card .contact-action {
+            color: #25D366;
+        }
+
+        /* Office Locations */
+        .office-locations {
+            padding: 5rem 0;
+            background: var(--gray-50);
+        }
+
+        .locations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .location-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            position: relative;
+            transition: var(--transition);
+            box-shadow: var(--shadow-md);
+        }
+
+        .location-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .location-card.main-office {
+            border: 2px solid var(--primary-green-light);
+            background: linear-gradient(135deg, var(--white) 0%, var(--light-green-bg) 100%);
+        }
+
+        .location-badge {
+            position: absolute;
+            top: -12px;
+            right: 20px;
+            background: var(--primary-green);
+            color: var(--white);
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .location-icon {
+            margin-bottom: 1rem;
+        }
+
+        .location-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary-green);
+        }
+
+        .location-address {
+            color: var(--text-gray);
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+
+        .location-contact {
+            margin: 1rem 0;
+            padding: 0.75rem 0;
+            border-top: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .location-contact p {
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        .location-hours {
+            margin-bottom: 1rem;
+        }
+
+        .location-hours span {
+            display: block;
+            font-size: 0.875rem;
+            color: var(--text-light);
+            margin-bottom: 0.25rem;
+        }
+
+        .location-direction {
+            color: var(--primary-green);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: var(--transition);
+        }
+
+        .location-direction:hover {
+            transform: translateX(5px);
+        }
+
+        /* Maps Section */
+        .maps-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .map-container {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            display: block;
+        }
+
+        /* Business Hours */
+        .business-hours {
+            padding: 5rem 0;
+            background: var(--gray-50);
+        }
+
+        .hours-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .hours-table {
+            margin: 2rem 0;
+        }
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .hours-row .day {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .hours-row .time {
+            color: var(--text-gray);
+        }
+
+        .emergency-contact {
+            background: var(--light-green-bg);
+            padding: 1rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .quick-tips {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+        }
+
+        .quick-tips h3 {
+            margin-bottom: 1rem;
+            color: var(--primary-green);
+        }
+
+        .quick-tips ul {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .quick-tips li {
+            margin-bottom: 0.75rem;
+            color: var(--text-gray);
+        }
+
+        .response-time {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            padding: 1rem;
+            background: var(--light-blue-bg);
+            border-radius: 12px;
+        }
+
+        .response-time strong {
+            display: block;
+            margin-bottom: 0.25rem;
+            color: var(--text-dark);
+        }
+
+        .response-time p {
+            font-size: 0.875rem;
+            color: var(--text-gray);
+        }
+
+        /* Connect Section */
+        .connect-section {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--light-green-bg) 0%, var(--light-blue-bg) 100%);
+        }
+
+        .connect-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .social-connect {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-icon {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--white);
+            border-radius: 50px;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+            color: var(--primary-green);
+        }
+
+        .connect-note {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .note-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .connect-note h3 {
+            margin-bottom: 1rem;
+        }
+
+        .connect-note p {
+            margin-bottom: 1.5rem;
+            color: var(--text-gray);
+        }
+
+        /* Contact FAQ */
+        .contact-faq {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            padding: 1.5rem;
+            background: var(--gray-50);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .faq-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-item h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary-green);
+        }
+
+        .faq-item p {
+            color: var(--text-gray);
+            line-height: 1.6;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+
+            .hours-wrapper,
+            .connect-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .contact-hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .contact-cards-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .locations-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hours-row {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-connect {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-card {
+                padding: 1.5rem;
+            }
+
+            .location-card {
+                padding: 1.5rem;
+            }
+
+            .quick-tips {
+                padding: 1.5rem;
+            }
+
+            .map-container iframe {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="https://edensurvey.co.ke">
+                    <img src="https://edensurvey.co.ke/assets/images/logo.webp" alt="Edensurveyors logo" width="50"
+                        height="50" loading="lazy">
+                    <span class="logo-text">Eden<span class="logo-highlight">Surveyors</span></span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="https://edensurvey.co.ke">Home</a></li>
+                    <li><a href="https://edensurvey.co.ke/about">About</a></li>
+                    <li><a href="https://edensurvey.co.ke/services">Services</a></li>
+                    <li><a href="https://edensurvey.co.ke/projects">Projects</a></li>
+                    <li><a href="https://edensurvey.co.ke/contact" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="contact-hero">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <span class="section-tag">Get in Touch</span>
+                    <h1>Contact <span class="highlight">Eden Surveyors</span></h1>
+                    <p>Reach out to us for professional land surveying services across Kenya</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Info Cards -->
+        <section class="contact-info-cards">
+            <div class="container">
+                <div class="contact-cards-grid">
+                    <!-- Phone Card -->
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                                    stroke="#2E7D64" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p class="contact-detail">+254 728803726</p>
+                        <p class="contact-detail">+254 728803726</p>
+                        <p class="contact-hours">Mon-Fri: 8am - 5pm</p>
+                        <a href="tel:+254712345678" class="contact-action">Call Now →</a>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-card">
+                        <div class="card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                                    stroke="#2E7D64" stroke-width="2" fill="none" />
+                                <polyline points="22,6 12,13 2,6" stroke="#2E7D64" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p class="contact-detail">info@edensurvey.co.ke</p>
+                        <p class="contact-detail">quotes@edensurveys.co.ke</p>
+                        <p class="contact-hours">Response within 24 hours</p>
+                        <a href="mailto:info@edensurveys.co.ke" class="contact-action">Send Email →</a>
+                    </div>
+
+                    <!-- WhatsApp Card -->
+                    <div class="contact-card whatsapp-card">
+                        <div class="card-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                                    stroke="#25D366" stroke-width="2" fill="none" />
+                            </svg>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p class="contact-detail">+254 728803726</p>
+                        <p class="contact-hours">Instant messaging & quotes</p>
+                        <a href="https://wa.me/254728803726?text=Hello%20Eden%20Surveys%2C%20I%20need%20a%20land%20survey%20quote"
+                            class="contact-action whatsapp-btn" target="_blank">Chat on WhatsApp →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Locations Section -->
+        <section class="office-locations">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Offices</span>
+                    <h2>Visit Our Branches</h2>
+                    <p>Strategically located to serve you better across Kenya</p>
+                </div>
+
+                <div class="locations-grid">
+                    <!-- Main Office - Malili, Machakos -->
+                    <div class="location-card main-office">
+                        <div class="location-badge">Main Office</div>
+                        <div class="location-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                                    stroke="#2E7D64" stroke-width="2" fill="#E8F5E9" />
+                                <circle cx="12" cy="9" r="2.5" fill="#2E7D64" />
+                            </svg>
+                        </div>
+                        <h3>Malili, Machakos</h3>
+                        <p class="location-address">Malili Town Center,<br>Opposite Malili Market,<br>Machakos County
+                        </p>
+                        <div class="location-contact">
+                            <p>📞 +254 728803726</p>
+                            <p>✉️ info@edensurvey.co.ke</p>
+                        </div>
+                        <div class="location-hours">
+                            <span>🕒 Mon-Fri: 8am - 5pm</span>
+                            <span>📅 Sat: By appointment</span>
+                        </div>
+                        <a href="https://maps.google.com/?q=Malili+Town+Machakos+Kenya" class="location-direction"
+                            target="_blank">Get Directions →</a>
+                    </div>
+
+                    <!-- Nairobi Branch -->
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                                    stroke="#2E7D64" stroke-width="2" fill="#E8F5E9" />
+                                <circle cx="12" cy="9" r="2.5" fill="#2E7D64" />
+                            </svg>
+                        </div>
+                        <h3>Machakos Town Branch</h3>
+                        <p class="location-address">Located in Machakos Town,<br>Next to Naivas,<br>Machakos county</p>
+                        <div class="location-contact">
+                            <p>📞 +254 728803726</p>
+                            <p>✉️ info@edensurvey.co.ke</p>
+                        </div>
+                        <div class="location-hours">
+                            <span>🕒 Mon-Fri: 8am - 5pm</span>
+                        </div>
+                        <a href="https://maps.google.com/?q=Westlands+Nairobi+Kenya" class="location-direction"
+                            target="_blank">Get Directions →</a>
+                    </div>
+
+                    <!-- Kiambu Branch -->
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                                    stroke="#2E7D64" stroke-width="2" fill="#E8F5E9" />
+                                <circle cx="12" cy="9" r="2.5" fill="#2E7D64" />
+                            </svg>
+                        </div>
+                        <h3>Ruiru Branch</h3>
+                        <p class="location-address">Ruiru Town,<br>Along Thika road,<br>Kiambu County</p>
+                        <div class="location-contact">
+                            <p>📞 +254 728803726</p>
+                            <p>✉️ info@edensurvey.co.ke</p>
+                        </div>
+                        <div class="location-hours">
+                            <span>🕒 Mon-Fri: 8am - 5pm</span>
+                        </div>
+                        <a href="https://maps.google.com/?q=Kiambu+Town+Kiambu+Kenya" class="location-direction"
+                            target="_blank">Get Directions →</a>
+                    </div>
+
+                    <!-- Kajiado Branch -->
+                    <div class="location-card">
+                        <div class="location-icon">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"
+                                    stroke="#2E7D64" stroke-width="2" fill="#E8F5E9" />
+                                <circle cx="12" cy="9" r="2.5" fill="#2E7D64" />
+                            </svg>
+                        </div>
+                        <h3>Joska Branch</h3>
+                        <p class="location-address">Joska Town,<br> Along kangundo road,<br>Machakos County
+                        </p>
+                        <div class="location-contact">
+                            <p>📞 +254 728803726</p>
+                            <p>✉️ info@edensurvey.co.ke</p>
+                        </div>
+                        <div class="location-hours">
+                            <span>🕒 Mon-Fri: 8am - 5pm</span>
+                        </div>
+                        <a href="https://maps.google.com/?q=Kajiado+Town+Kajiado+Kenya" class="location-direction"
+                            target="_blank">Get Directions →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps Section -->
+        <section class="maps-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Find Us</span>
+                    <h2>Main Office Location</h2>
+                    <p>Visit our headquarters in Malili, Machakos County</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255282.3581374663!2d36.95716619063131!3d-1.442205935766877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f2e5f0c3c4f1d%3A0x8b5e8c5f2a1e4f2d!2sMalili%2C%20Kenya!5e0!3m2!1sen!2s!4v1700000000000!5m2!1sen!2s"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Eden Surveys Main Office Location - Malili, Machakos">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Hours Section -->
+        <section class="business-hours">
+            <div class="container">
+                <div class="hours-wrapper">
+                    <div class="hours-content">
+                        <span class="section-tag">Schedule</span>
+                        <h2>Business Hours</h2>
+                        <p>We're here to serve you during these hours</p>
+
+                        <div class="hours-table">
+                            <div class="hours-row">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">8:00 AM - 5:00 PM</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="day">Saturday</span>
+                                <span class="time">By appointment only</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="day">Sunday</span>
+                                <span class="time">Closed</span>
+                            </div>
+                            <div class="hours-row">
+                                <span class="day">Public Holidays</span>
+                                <span class="time">Closed</span>
+                            </div>
+                        </div>
+
+                        <div class="emergency-contact">
+                            <p>📞 <strong>Emergency/Urgent Survey?</strong> Call: +254 728803726</p>
+                        </div>
+                    </div>
+
+                    <div class="quick-tips">
+                        <h3>Quick Tips Before Visiting</h3>
+                        <ul>
+                            <li>✓ Book an appointment for faster service</li>
+                            <li>✓ Bring your land documents if available</li>
+                            <li>✓ Send documents via email before visiting</li>
+                            <li>✓ WhatsApp for quick quotes and questions</li>
+                        </ul>
+
+                        <div class="response-time">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                            </svg>
+                            <div>
+                                <strong>Response Time:</strong>
+                                <p>Emails within 24 hours<br>WhatsApp at the earliest convinience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connect With Us Section -->
+        <section class="connect-section">
+            <div class="container">
+                <div class="connect-wrapper">
+                    <div class="connect-content">
+                        <h2>Connect With Us</h2>
+                        <p>Follow us on social media for updates, project showcases, and surveying tips</p>
+                        <div class="social-connect">
+                            <a href="https://www.facebook.com/profile.php?id=61589334980556" class="social-icon"
+                                aria-label="Facebook" target="_blank">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                        stroke="#2E7D64" stroke-width="2" fill="none" />
+                                </svg>
+                                <span>Facebook</span>
+                            </a>
+                            <a href="https://www.instagram.com/muemaalexanderm?igsh=bmJtZWE2NGZodjVl"
+                                class="social-icon" aria-label="Instagram" target="_blank">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="#2E7D64"
+                                        stroke-width="1.8" fill="none" />
+                                    <circle cx="12" cy="12" r="4" stroke="#2E7D64" stroke-width="1.8" fill="none" />
+                                    <circle cx="17.5" cy="6.5" r="1.5" fill="#2E7D64" />
+                                </svg>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="#" class="social-icon" aria-label="TikTok">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 15.64a6.34 6.34 0 0 0 10.86 4.27 6.34 6.34 0 0 0 1.63-4.28V10.1a7.76 7.76 0 0 0 4.59 1.48V8.16a4.67 4.67 0 0 1-2.49-1.47z"
+                                        stroke="#2E7D64" stroke-width="1.8" stroke-linecap="round"
+                                        stroke-linejoin="round" fill="none" />
+                                </svg>
+                                <span>TikTok</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muema-alexander-3a130a305?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                                class="social-icon" aria-label="LinkedIn" target="_blank">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                        stroke="#2E7D64" stroke-width="2" fill="none" />
+                                    <rect x="2" y="9" width="4" height="12" stroke="#2E7D64" stroke-width="2"
+                                        fill="none" />
+                                    <circle cx="4" cy="4" r="2" stroke="#2E7D64" stroke-width="2" fill="none" />
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="connect-note">
+                        <div class="note-icon">💡</div>
+                        <h3>Get a Free Consultation</h3>
+                        <p>Call us or send a WhatsApp message for a free initial consultation and accurate quote for
+                            your surveying needs.</p>
+                        <a href="https://wa.me/254728803726?text=Hello%20Eden%20Surveys%2C%20I%20need%20a%20free%20consultation%20for%20a%20land%20survey"
+                            class="btn btn-primary" target="_blank">Start Free Consultation →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="contact-faq">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Quick answers to common questions about contacting us</p>
+                </div>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How quickly do you respond to inquiries?</h3>
+                        <p>We respond to emails within 24 hours and WhatsApp messages within 2 hours during business
+                            days.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do I need an appointment to visit the office?</h3>
+                        <p>While walk-ins are welcome, we recommend booking an appointment for faster service,
+                            especially for detailed consultations.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What documents should I bring?</h3>
+                        <p>If possible, bring any land documents you have (title deed, previous survey maps, etc.) for
+                            better assistance.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>Do you offer after-hours support?</h3>
+                        <p>For urgent surveying matters, call our emergency line at +254 728 803 726. Standard rates
+                            apply.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="logo-text">Eden <span class="logo-highlight">Surveyors</span></span>
+                    </div>
+                    <p>Precision in every measurement.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61589334980556" aria-label="Facebook"
+                            target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                    stroke="currentColor" stroke-width="2" fill="none" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/muemaalexanderm?igsh=bmJtZWE2NGZodjVl" aria-label="Instagram"
+                            target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor"
+                                    stroke-width="1.8" fill="none" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" fill="none" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 15.64a6.34 6.34 0 0 0 10.86 4.27 6.34 6.34 0 0 0 1.63-4.28V10.1a7.76 7.76 0 0 0 4.59 1.48V8.16a4.67 4.67 0 0 1-2.49-1.47z"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" fill="none" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muema-alexander-3a130a305?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            aria-label="LinkedIn" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                    stroke="currentColor" stroke-width="2" fill="none" />
+                                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" fill="none" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://edensurvey.co.ke/">Home</a></li>
+                        <li><a href="https://edensurvey.co.ke/about">About</a></li>
+                        <li><a href="https://edensurvey.co.ke/services">Services</a></li>
+                        <li><a href="https://edensurvey.co.ke/projects">Projects</a></li>
+                        <li><a href="https://edensurvey.co.ke/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="https://edensurvey.co.ke/services#land-surveys">Land Surveys</a></li>
+                        <li><a href="https://edensurvey.co.ke/services#engineering-surveys">Engineering Surveys</a></li>
+                        <li><a href="https://edensurvey.co.ke/services#topographic-mapping">Topographic Mapping</a></li>
+                        <li><a href="https://edensurvey.co.ke/services#gis-analysis">GIS Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li> Malili, Machakos, Kenya</li>
+                        <li> +254 728803726</li>
+                        <li> info@edensurvey.co.ke</li>
+                        <li> Mon-Fri: 8am - 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eden Surveyors || All rights reserved.s</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://edensurvey.co.ke/assets/js/url-router.js" defer></script>
+    <script src="https://edensurvey.co.ke/assets/js/main.js" defer></script>
+    <script src="https://edensurvey.co.ke/assets/js/schema.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Our Surveying Services | Eden Surveyors - Professional Land Surveyors in Kenya</title>
+    <meta name="description"
+        content="Explore our comprehensive land surveying services including boundary surveys, topographic mapping, engineering surveys, GIS analysis, and more. Licensed and professional.">
+    <meta name="keywords"
+        content="Eden surveyors services, land survey services Kenya, boundary survey, topographic mapping, engineering survey, GIS mapping, subdivision survey, construction setting out">
+    <meta name="author" content="Eden Surveyors">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://edensurvey.co.ke/services">
+
+    <!--<base href="/site/"> -->
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Our Surveying Services | Eden Surveys - Kenya">
+    <meta property="og:description"
+        content="Professional land surveying services across Kenya. Boundary, topographic, engineering surveys, and GIS mapping.">
+    <meta property="og:image" content="https://edensurvey.co.ke/assets/images/services-og.jpg">
+    <meta property="og:url" content="https://edensurvey.co.ke/services">
+    <meta property="og:type" content="website">
+
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="https://edensurvey.co.ke/assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://edensurvey.co.ke/favicon.ico">
+
+    <style>
+        /* Services Hero */
+        .services-hero {
+            background: linear-gradient(135deg, var(--light-green-bg) 0%, var(--light-blue-bg) 100%);
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .services-hero-content h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .services-hero-content p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Service Detail Sections */
+        .service-detail {
+            padding: 5rem 0;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .service-detail.alt {
+            background: var(--gray-50);
+        }
+
+        .service-detail-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .service-detail-grid.reverse {
+            direction: rtl;
+        }
+
+        .service-detail-grid.reverse .service-detail-content {
+            direction: ltr;
+        }
+
+        .service-badge {
+            display: inline-block;
+            background: var(--light-green-bg);
+            color: var(--primary-green);
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
+
+        .service-detail-content h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .service-description {
+            font-size: 1.125rem;
+            color: var(--text-gray);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+
+        .service-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .info-block h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.75rem;
+            color: var(--primary-green);
+        }
+
+        .info-block ul {
+            list-style: none;
+        }
+
+        .info-block li {
+            margin-bottom: 0.5rem;
+            font-size: 0.95rem;
+            color: var(--text-gray);
+        }
+
+        .service-meta {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            padding: 1rem 0;
+            border-top: 1px solid var(--gray-200);
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        .service-detail-image {
+            position: relative;
+        }
+
+        .service-detail-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 16px;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .image-caption {
+            text-align: center;
+            margin-top: 0.75rem;
+            font-size: 0.875rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Technology Section */
+        .technology-section {
+            padding: 5rem 0;
+            background: var(--white);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .tech-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--gray-50);
+            border-radius: 16px;
+            transition: var(--transition);
+        }
+
+        .tech-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .tech-card svg {
+            margin-bottom: 1rem;
+        }
+
+        .tech-card h3 {
+            margin-bottom: 0.5rem;
+            font-size: 1.25rem;
+        }
+
+        .tech-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* Why Us Section on Services Page */
+        .why-us-services {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, var(--light-blue-bg) 0%, var(--white) 100%);
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .benefits-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .benefit {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+
+        .benefit-icon {
+            width: 32px;
+            height: 32px;
+            background: var(--light-green-bg);
+            color: var(--primary-green);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .benefit h3 {
+            margin-bottom: 0.25rem;
+            font-size: 1.125rem;
+        }
+
+        .benefit p {
+            color: var(--text-gray);
+            line-height: 1.5;
+        }
+
+        .why-us-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+
+        .stat-card {
+            background: var(--white);
+            padding: 2rem;
+            text-align: center;
+            border-radius: 16px;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .stat-card .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--primary-green);
+            display: block;
+        }
+
+        .stat-card .stat-label {
+            font-size: 0.875rem;
+            color: var(--text-light);
+        }
+
+        /* Services CTA */
+        .services-cta {
+            padding: 5rem 0;
+        }
+
+        .cta-box {
+            background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-dark) 100%);
+            padding: 4rem;
+            text-align: center;
+            border-radius: 24px;
+            color: var(--white);
+        }
+
+        .cta-box h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .cta-box p {
+            margin-bottom: 2rem;
+            font-size: 1.125rem;
+            opacity: 0.9;
+        }
+
+        .cta-box .btn-primary {
+            background: var(--white);
+            color: var(--primary-green);
+        }
+
+        .cta-box .btn-primary:hover {
+            background: var(--gray-100);
+            transform: translateY(-2px);
+        }
+
+        .cta-box .btn-outline {
+            background: transparent;
+            color: var(--white);
+            border-color: var(--white);
+        }
+
+        .cta-box .btn-outline:hover {
+            background: var(--white);
+            color: var(--primary-green);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+
+            .service-detail-grid,
+            .why-us-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .service-detail-grid.reverse {
+                direction: ltr;
+            }
+
+            .service-info {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .services-hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .service-detail-content h2 {
+                font-size: 1.5rem;
+            }
+
+            .service-meta {
+                flex-direction: column;
+                gap: 0.75rem;
+            }
+
+            .why-us-stats {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-box {
+                padding: 2rem;
+            }
+
+            .cta-box h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .why-us-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .service-badge {
+                font-size: 0.7rem;
+            }
+
+            .benefit {
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="https://edensurvey.co.ke">
+                    <img src="https://edensurvey.co.ke/assets/images/logo.webp" alt="Edensurveyors logo" width="50"
+                        height="50" loading="lazy">
+                    <span class="logo-text">Eden<span class="logo-highlight">Surveyors</span></span>
+                </a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="https://edensurvey.co.ke">Home</a></li>
+                    <li><a href="https://edensurvey.co.ke/about">About</a></li>
+                    <li><a href="https://edensurvey.co.ke/services" class="active">Services</a></li>
+                    <li><a href="https://edensurvey.co.ke/projects">Projects</a></li>
+                    <li><a href="https://edensurvey.co.ke/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Page Hero -->
+        <section class="services-hero">
+            <div class="container">
+                <div class="services-hero-content">
+                    <span class="section-tag">Our Expertise</span>
+                    <h1>Professional <span class="highlight">Surveying Services</span></h1>
+                    <p>Comprehensive land surveying solutions tailored to your specific needs, delivered with precision
+                        and professionalism</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Services Section -->
+        <section class="all-services">
+            <div class="container">
+                <!-- Service 1: Boundary Survey -->
+                <div id="land-surveys" class="service-detail">
+                    <div class="service-detail-grid">
+                        <div class="service-detail-content">
+                            <div class="service-badge">Core Service</div>
+                            <h2>Boundary & Land Surveys</h2>
+                            <p class="service-description">Define your property boundaries with precision and legal
+                                certainty. Our boundary surveys establish exact property lines, identify encroachments,
+                                and provide legally recognized documentation.</p>
+
+                            <div class="service-info">
+                                <div class="info-block">
+                                    <h3>Who Needs This Service?</h3>
+                                    <ul>
+                                        <li>✓ Property buyers and sellers</li>
+                                        <li>✓ Real estate developers</li>
+                                        <li>✓ Land dispute resolution</li>
+                                        <li>✓ Property owners establishing boundaries</li>
+                                        <li>✓ Financial institutions for mortgages</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block">
+                                    <h3>Deliverables</h3>
+                                    <ul>
+                                        <li>✓ Professional survey report</li>
+                                        <li>✓ Beacon placement and planting</li>
+                                        <li>✓ Boundary diagram/map</li>
+                                        <li>✓ Beacon certificate</li>
+                                        <li>✓ Land Survey Board compliant documentation</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-meta">
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                        <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                                    </svg>
+                                    <span>Timeline:Undertaken with urgency</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 12V8H4V12M20 12L12 16L4 12M20 12V16M4 12V16" stroke="#2E7D64"
+                                            stroke-width="2" />
+                                    </svg>
+                                    <span>Get Quote: Based on acreage</span>
+                                </div>
+                            </div>
+
+                            <a href="contact" class="btn btn-primary">Request Quote →</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://edensurvey.co.ke/assets/images/beacons.jpeg"
+                                alt="Boundary survey professional in Kenya" width="500" height="200" loading="lazy">
+                            <div class="image-caption">Boundary beacon placement</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 2: Topographic Survey -->
+                <div id="topographic-mapping" class="service-detail alt">
+                    <div class="service-detail-grid reverse">
+                        <div class="service-detail-content">
+                            <div class="service-badge">Mapping Service</div>
+                            <h2>Topographic Mapping</h2>
+                            <p class="service-description">Detailed terrain mapping showing elevation contours, natural
+                                features, and man-made structures. Essential for construction planning, environmental
+                                assessments, and land development.</p>
+
+                            <div class="service-info">
+                                <div class="info-block">
+                                    <h3>Who Needs This Service?</h3>
+                                    <ul>
+                                        <li>✓ Architects and engineers</li>
+                                        <li>✓ Construction companies</li>
+                                        <li>✓ Environmental consultants</li>
+                                        <li>✓ Real estate developers</li>
+                                        <li>✓ Mining and quarry operators</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block">
+                                    <h3>Deliverables</h3>
+                                    <ul>
+                                        <li>✓ Contour map (1m intervals)</li>
+                                        <li>✓ Digital Elevation Model (DEM)</li>
+                                        <li>✓ 3D terrain visualization</li>
+                                        <li>✓ Cross-section drawings</li>
+                                        <li>✓ Volume calculations</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-meta">
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                        <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                                    </svg>
+                                    <span>Timeline: Undertaken with urgency</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 12V8H4V12M20 12L12 16L4 12M20 12V16M4 12V16" stroke="#2E7D64"
+                                            stroke-width="2" />
+                                    </svg>
+                                    <span>Get Quote: Per hectare</span>
+                                </div>
+                            </div>
+
+                            <a href="contact" class="btn btn-primary">Request Quote →</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://edensurvey.co.ke/assets/images/topographic-survey.webp"
+                                alt="Topographic mapping with modern equipment" width="500" height="400" loading="lazy">
+                            <div class="image-caption">Contour mapping in progress</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Engineering Surveys -->
+                <div id="engineering-surveys" class="service-detail">
+                    <div class="service-detail-grid">
+                        <div class="service-detail-content">
+                            <div class="service-badge">Construction Support</div>
+                            <h2>Engineering & Construction Surveys</h2>
+                            <p class="service-description">Critical surveys for construction projects ensuring accurate
+                                positioning, alignment, and compliance with design specifications.</p>
+
+                            <div class="service-info">
+                                <div class="info-block">
+                                    <h3>Who Needs This Service?</h3>
+                                    <ul>
+                                        <li>✓ Construction companies</li>
+                                        <li>✓ Civil engineers</li>
+                                        <li>✓ Road and infrastructure contractors</li>
+                                        <li>✓ Building developers</li>
+                                        <li>✓ Utility companies</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block">
+                                    <h3>Deliverables</h3>
+                                    <ul>
+                                        <li>✓ Construction setting out</li>
+                                        <li>✓ As-built surveys</li>
+                                        <li>✓ Volume calculations</li>
+                                        <li>✓ Structural alignment</li>
+                                        <li>✓ Progress monitoring reports</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-meta">
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                        <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                                    </svg>
+                                    <span>Timeline: Undertaken with urgency</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 12V8H4V12M20 12L12 16L4 12M20 12V16M4 12V16" stroke="#2E7D64"
+                                            stroke-width="2" />
+                                    </svg>
+                                    <span>Custom quote</span>
+                                </div>
+                            </div>
+
+                            <a href="contact" class="btn btn-primary">Request Quote →</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="assets/images/engineering1.jpeg" alt="Engineering survey for construction"
+                                width="500" height="400" loading="lazy">
+                            <div class="image-caption">Horizontal road alignment setting out</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: Subdivision & Mutation Surveys -->
+                <div id="subdivision-surveys" class="service-detail alt">
+                    <div class="service-detail-grid reverse">
+                        <div class="service-detail-content">
+                            <div class="service-badge">Land Registration</div>
+                            <h2>Subdivision & Mutation Surveys</h2>
+                            <p class="service-description">Legal process of dividing land into smaller plots. We handle
+                                the complete mutation survey process and submission to the Ministry of Lands.</p>
+
+                            <div class="service-info">
+                                <div class="info-block">
+                                    <h3>Who Needs This Service?</h3>
+                                    <ul>
+                                        <li>✓ Land developers</li>
+                                        <li>✓ Real estate investors</li>
+                                        <li>✓ Property owners subdividing land</li>
+                                        <li>✓ Estate planners</li>
+                                        <li>✓ Cooperative societies</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block">
+                                    <h3>Deliverables</h3>
+                                    <ul>
+                                        <li>✓ Mutation survey plan</li>
+                                        <li>✓ Mutation forms (RLA)</li>
+                                        <li>✓ Survey report</li>
+                                        <li>✓ New title processing support</li>
+                                        <li>✓ Ministry of Lands submission</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-meta">
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                        <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                                    </svg>
+                                    <span>Timeline: Undertaken with urgency</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 12V8H4V12M20 12L12 16L4 12M20 12V16M4 12V16" stroke="#2E7D64"
+                                            stroke-width="2" />
+                                    </svg>
+                                    <span>Based on number of plots</span>
+                                </div>
+                            </div>
+
+                            <a href="contact" class="btn btn-primary">Request Quote →</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://edensurvey.co.ke/assets/images/subdivision2.webp"
+                                alt="Land subdivision survey Kenya" width="500" height="400" loading="lazy">
+                            <div class="image-caption">Plot subdivision planning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 5: GIS & Mapping Services -->
+                <div id="gis-analysis" class="service-detail">
+                    <div class="service-detail-grid">
+                        <div class="service-detail-content">
+                            <div class="service-badge">Digital Solutions</div>
+                            <h2>GIS & Mapping Services</h2>
+                            <p class="service-description">Advanced geographic information systems and digital mapping
+                                solutions for data visualization, analysis, and land management.</p>
+
+                            <div class="service-info">
+                                <div class="info-block">
+                                    <h3>Who Needs This Service?</h3>
+                                    <ul>
+                                        <li>✓ County governments</li>
+                                        <li>✓ Urban planners</li>
+                                        <li>✓ Environmental agencies</li>
+                                        <li>✓ Real estate developers</li>
+                                        <li>✓ Research institutions</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block">
+                                    <h3>Deliverables</h3>
+                                    <ul>
+                                        <li>✓ Digital parcel maps</li>
+                                        <li>✓ Land use maps</li>
+                                        <li>✓ GIS databases</li>
+                                        <li>✓ Spatial analysis reports</li>
+                                        <li>✓ Interactive web maps</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-meta">
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                        <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                                    </svg>
+                                    <span>Timeline: Undertaken with urgency</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 12V8H4V12M20 12L12 16L4 12M20 12V16M4 12V16" stroke="#2E7D64"
+                                            stroke-width="2" />
+                                    </svg>
+                                    <span>Project based</span>
+                                </div>
+                            </div>
+
+                            <a href="contact" class="btn btn-primary">Request Quote →</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://edensurvey.co.ke/assets/images/Gnss-config.webp"
+                                alt="GIS mapping and analysis services" width="500" height="400" loading="lazy">
+                            <div class="image-caption">Digital mapping solutions</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 6: Remote Sensing Services -->
+                <div id="remote-sensing" class="service-detail alt">
+                    <div class="service-detail-grid reverse">
+                        <div class="service-detail-content">
+                            <div class="service-badge">Advanced Technology</div>
+                            <h2>Remote Sensing Surveys</h2>
+                            <p class="service-description">Drone and satellite imagery for large-scale land analysis,
+                                environmental monitoring, and rapid assessment surveys.</p>
+
+                            <div class="service-info">
+                                <div class="info-block">
+                                    <h3>Who Needs This Service?</h3>
+                                    <ul>
+                                        <li>✓ Large land owners</li>
+                                        <li>✓ Environmental monitors</li>
+                                        <li>✓ Agricultural planners</li>
+                                        <li>✓ Mining companies</li>
+                                        <li>✓ Disaster management agencies</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block">
+                                    <h3>Deliverables</h3>
+                                    <ul>
+                                        <li>✓ High-resolution orthophotos</li>
+                                        <li>✓ NDVI vegetation analysis</li>
+                                        <li>✓ Thermal imagery</li>
+                                        <li>✓ 3D models from drone data</li>
+                                        <li>✓ Change detection analysis</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-meta">
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                        <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                                    </svg>
+                                    <span>Timeline: Undertaken with urgency</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 12V8H4V12M20 12L12 16L4 12M20 12V16M4 12V16" stroke="#2E7D64"
+                                            stroke-width="2" />
+                                    </svg>
+                                    <span>Per sq km</span>
+                                </div>
+                            </div>
+
+                            <a href="contact" class="btn btn-primary">Request Quote →</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://edensurvey.co.ke/assets/images/service1.jpeg"
+                                alt="Drone and remote sensing surveys" width="500" height="400" loading="lazy">
+                            <div class="image-caption">Drone surveying in progress</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 7: Powerline & Pipeline Surveys -->
+                <div id="powerline-pipeline" class="service-detail">
+                    <div class="service-detail-grid">
+                        <div class="service-detail-content">
+                            <div class="service-badge">Infrastructure</div>
+                            <h2>Powerline & Pipeline Surveys</h2>
+                            <p class="service-description">Specialized surveys for linear infrastructure projects
+                                including route alignment, easement mapping, and corridor assessment.</p>
+
+                            <div class="service-info">
+                                <div class="info-block">
+                                    <h3>Who Needs This Service?</h3>
+                                    <ul>
+                                        <li>✓ Energy companies</li>
+                                        <li>✓ Pipeline operators</li>
+                                        <li>✓ Transmission line contractors</li>
+                                        <li>✓ Infrastructure developers</li>
+                                    </ul>
+                                </div>
+
+                                <div class="info-block">
+                                    <h3>Deliverables</h3>
+                                    <ul>
+                                        <li>✓ Route alignment surveys</li>
+                                        <li>✓ Easement mapping</li>
+                                        <li>✓ Profile drawings</li>
+                                        <li>✓ Structure positioning</li>
+                                        <li>✓ Environmental corridor maps</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="service-meta">
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                                        <polyline points="12 6 12 12 16 14" stroke="#2E7D64" stroke-width="2" />
+                                    </svg>
+                                    <span>Timeline: Per km basis</span>
+                                </div>
+                                <div class="meta-item">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                                        <path d="M20 12V8H4V12M20 12L12 16L4 12M20 12V16M4 12V16" stroke="#2E7D64"
+                                            stroke-width="2" />
+                                    </svg>
+                                    <span>Custom quote</span>
+                                </div>
+                            </div>
+
+                            <a href="contact" class="btn btn-primary">Request Quote →</a>
+                        </div>
+                        <div class="service-detail-image">
+                            <img src="https://edensurvey.co.ke/assets/images/drainage setting.jpeg"
+                                alt="Pipeline and powerline route survey" width="500" height="400" loading="lazy">
+                            <div class="image-caption">Corridor mapping</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section -->
+        <section class="technology-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Our Tools</span>
+                    <h2>Modern Surveying Technology</h2>
+                    <p>Leveraging cutting-edge equipment for unparalleled precision</p>
+                </div>
+                <div class="tech-grid">
+                    <div class="tech-card">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="#2E7D64" stroke-width="2" />
+                            <path d="M12 8v4l3 3" stroke="#2E7D64" stroke-width="2" />
+                        </svg>
+                        <h3>GPS/GNSS Systems</h3>
+                        <p>High-precision global positioning for accurate coordinate determination</p>
+                    </div>
+                    <div class="tech-card">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="4" width="16" height="16" rx="2" stroke="#2E7D64" stroke-width="2" />
+                            <path d="M8 8h8M8 12h6" stroke="#2E7D64" stroke-width="2" />
+                        </svg>
+                        <h3>Total Stations</h3>
+                        <p>Robotic total stations for precise angle and distance measurement</p>
+                    </div>
+                    <div class="tech-card">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2v4M12 18v4M4 12H2M8 12H6M18 12h-2M22 12h-2" stroke="#2E7D64"
+                                stroke-width="2" />
+                            <circle cx="12" cy="12" r="4" stroke="#2E7D64" stroke-width="2" />
+                        </svg>
+                        <h3>Drone Surveying</h3>
+                        <p>UAV technology for rapid aerial data collection and mapping</p>
+                    </div>
+                    <div class="tech-card">
+                        <svg width="50" height="50" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="3" width="20" height="14" rx="2" stroke="#2E7D64" stroke-width="2" />
+                            <line x1="8" y1="21" x2="16" y2="21" stroke="#2E7D64" stroke-width="2" />
+                            <line x1="12" y1="17" x2="12" y2="21" stroke="#2E7D64" stroke-width="2" />
+                        </svg>
+                        <h3>GIS Software</h3>
+                        <p>Advanced geographic information systems for data analysis</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us-services">
+            <div class="container">
+                <div class="why-us-grid">
+                    <div class="why-us-content">
+                        <span class="section-tag">Why Choose Us</span>
+                        <h2>What Makes Eden Surveys Different?</h2>
+                        <div class="benefits-list">
+                            <div class="benefit">
+                                <div class="benefit-icon">✓</div>
+                                <div>
+                                    <h3>100% Legal Compliance</h3>
+                                    <p>All surveys meet Land Surveyors Board and Ministry of Lands requirements</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <div class="benefit-icon">✓</div>
+                                <div>
+                                    <h3>Fast Turnaround</h3>
+                                    <p>Efficient delivery without compromising on accuracy or quality</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <div class="benefit-icon">✓</div>
+                                <div>
+                                    <h3>Transparent Pricing</h3>
+                                    <p>No hidden costs - clear quotes with detailed breakdowns</p>
+                                </div>
+                            </div>
+                            <div class="benefit">
+                                <div class="benefit-icon">✓</div>
+                                <div>
+                                    <h3>Post-Survey Support</h3>
+                                    <p>Ongoing assistance with land registration and follow-up queries</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-us-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="500">0</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="100">0</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="10">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-target="4">0</div>
+                            <div class="stat-label">Service Counties</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="services-cta">
+            <div class="container">
+                <div class="cta-box">
+                    <h2>Need a Professional Survey?</h2>
+                    <p>Contact us today for a free consultation and accurate quote</p>
+                    <div class="cta-buttons">
+                        <a href="contact" class="btn btn-primary">Get a Free Quote</a>
+                        <a href="tel:+254728803726" class="btn btn-outline">Call Us Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <span class="logo-text">Eden <span class="logo-highlight">Surveyors</span></span>
+                    </div>
+                    <p>Precision in every measurement.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61589334980556" aria-label="Facebook"
+                            target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                                    stroke="currentColor" stroke-width="2" fill="none" />
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/muemaalexanderm?igsh=bmJtZWE2NGZodjVl" aria-label="Instagram"
+                            target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor"
+                                    stroke-width="1.8" fill="none" />
+                                <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.8" fill="none" />
+                                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path
+                                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 15.64a6.34 6.34 0 0 0 10.86 4.27 6.34 6.34 0 0 0 1.63-4.28V10.1a7.76 7.76 0 0 0 4.59 1.48V8.16a4.67 4.67 0 0 1-2.49-1.47z"
+                                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                                    stroke-linejoin="round" fill="none" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muema-alexander-3a130a305?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                            aria-label="LinkedIn" target="_blank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                                    stroke="currentColor" stroke-width="2" fill="none" />
+                                <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="2"
+                                    fill="none" />
+                                <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="2" fill="none" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="https://edensurvey.co.ke">Home</a></li>
+                        <li><a href="https://edensurvey.co.ke/about">About</a></li>
+                        <li><a href="https://edensurvey.co.ke/services">Services</a></li>
+                        <li><a href="https://edensurvey.co.ke/projects">Projects</a></li>
+                        <li><a href="https://edensurvey.co.ke/contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="https://edensurvey.co.ke/services#land-surveys">Land Surveys</a></li>
+                        <li><a href="https://edensurvey.co.ke/services#engineering-surveys">Engineering Surveys</a></li>
+                        <li><a href="https://edensurvey.co.ke/services#topographic-mapping">Topographic Mapping</a></li>
+                        <li><a href="https://edensurvey.co.ke/services#gis-analysis">GIS Analysis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li> Malili, Machakos, Kenya</li>
+                        <li> +254 728803726</li>
+                        <li> info@edensurvey.co.ke</li>
+                        <li> Mon-Fri: 8am - 5pm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Eden Surveyors || All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://edensurvey.co.ke/assets/js/url-router.js" defer></script>
+    <script src="https://edensurvey.co.ke/assets/js/main.js" defer></script>
+    <script src="https://edensurvey.co.ke/assets/js/schema.js" defer></script>
+</body>
+
+</html>
