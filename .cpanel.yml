@@ -1,10 +1,10 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/edensurv/public_html/
+    - /bin/cp favicon.ico $DEPLOYPATH
+    - /bin/cp apple-touch-icon.png $DEPLOYPATH
     - /bin/cp -r assets $DEPLOYPATH
     - /bin/cp *.html $DEPLOYPATH
     - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/cp favicon.ico $DEPLOYPATH
-    - /bin/cp apple-touch-icon.png $DEPLOYPATH
     - /bin/cp robots.txt $DEPLOYPATH
     - /bin/cp sitemap.xml $DEPLOYPATH
