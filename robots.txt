@@ -2,5 +2,8 @@ User-agent: *
 Allow: /
 Sitemap: https://edensurvey.co.ke/sitemap.xml
 
+Allow: /assets/css/
+Allow: /assets/js/
+Allow: /assets/images/
+
 # Disable admin areas (if any)
-Disallow: /assets/
